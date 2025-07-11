@@ -59,7 +59,7 @@ main {
     .blog__content {
         display: grid;
         gap: var(--spacing-md);
-        font-size: 4.1cqw;
+        font-size: 4.5cqw;
 
         .blog__content-header {
             display:grid;
@@ -97,10 +97,16 @@ main {
 
         .blog__content-main {
             display: grid;
-            gap: var(--spacing-xs);
+            gap: var(--spacing-md);
 
             .blog__title {
                 font-size: 1.5em;
+                cursor: pointer;
+                transition: color 0.1s;
+
+                &:hover {
+                    color: var(--yellow);
+                }
             }
 
             .blog__description {
