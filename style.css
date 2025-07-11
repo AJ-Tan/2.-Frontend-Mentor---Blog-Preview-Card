@@ -9,6 +9,7 @@
     --white: hsl(0, 0%, 100%);
     --gray-500: hsl(0, 0%, 42%);
     --gray-950: hsl(0, 0%, 7%);
+    --blue-ish: rgb(145, 145, 241);
 
     font-size: 16px;
 
@@ -50,9 +51,6 @@ main {
 
     .blog__img {
         max-width: 100%;
-    }
-
-    .blog__img {
         border-radius: var(--spacing-xs);
     }
 
@@ -71,10 +69,9 @@ main {
                 gap: var(--spacing-xs);
                 
                 .blog__tag-item {
-                    display: inline-block;
-                    
+
                     .blog__color-blue {
-                        background-color: rgb(145, 145, 241);
+                        background-color: var(--blue-ish);
                     }
 
                     .blog__color-yellow {
