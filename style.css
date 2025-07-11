@@ -57,7 +57,7 @@ main {
     .blog__content {
         display: grid;
         gap: var(--spacing-md);
-        font-size: 4.5cqw;
+        font-size: clamp( 0.7rem, 4.5cqw, 1rem);
 
         .blog__content-header {
             display:grid;
