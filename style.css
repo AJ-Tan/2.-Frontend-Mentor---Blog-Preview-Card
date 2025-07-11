@@ -11,7 +11,7 @@
     --gray-950: hsl(0, 0%, 7%);
     --blue-ish: rgb(145, 145, 241);
 
-    font-size: 16px;
+    font-size: 18px;
 
     --spacing-xs: 0.5rem;
     --spacing-sm: 0.75rem;
@@ -39,7 +39,8 @@ main {
     container-type: inline-size;
 
     width: 100%;
-    max-width: 21rem;
+    max-width: 20rem;
+    min-width: 275px;
 
     background-color: var(--white);
     padding: var(--spacing-md);
@@ -50,14 +51,14 @@ main {
     border-radius: 1rem;
 
     .blog__img {
-        max-width: 100%;
+        width: 100%;
         border-radius: var(--spacing-xs);
     }
 
     .blog__content {
         display: grid;
         gap: var(--spacing-md);
-        font-size: clamp( 0.7rem, 4.5cqw, 1rem);
+        font-size: clamp( 0.7rem, 4.5cqw, 1.1rem);
 
         .blog__content-header {
             display:grid;
@@ -114,7 +115,7 @@ main {
 
         .blog__content-footer {
             display: grid;
-            grid-template-columns: 12cqw 1fr;
+            grid-template-columns: clamp(2.4rem, 12cqw, 2.5rem) 1fr;
             align-items: center;
             gap: var(--spacing-xs);
 
