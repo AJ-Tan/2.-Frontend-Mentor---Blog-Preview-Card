@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+
+    font-size: 16px;
+
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 0.75rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+}
+
+body {
+    font-family: Figtree, Arial, Helvetica, sans-serif;
+    background-color: var(--yellow);
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.blog__card {
+    background-color: var(--white);
+    max-width: 18rem;
+    padding: var(--spacing-md);
+    border-radius: 1rem;
+    display: grid;
+    gap: var(--spacing-md);
+
+    .blog__img {
+        max-width: 100%;
+    }
+
+    .blog__img {
+        border-radius: var(--spacing-xs);
+    }
+
+    .blog__content {
+        display: grid;
+        gap: var(--spacing-sm);
+        font-size: 0.7rem;
+
+        .blog__content-header {
+            display:grid;
+            gap: var(--spacing-xs);
+
+            .blog__tag-list {
+                list-style-type: none;
+                
+                .blog__tag-item {
+                    display: inline-block;
+
+                    p {
+                        font-weight: 700;
+                        background-color: var(--yellow);
+                        padding: var(--spacing-xs);
+                        border-radius: 0.3em;
+                    }
+                }
+            }
+
+            .blog__date {
+                color: var(--gray-950);
+            }
+        }
+
+        .blog__content-main {
+            display: grid;
+            gap: var(--spacing-xs);
+
+            .blog__title {
+                font-size: 1.5em;
+            }
+
+            .blog__description {
+                color: var(--gray-500);
+            }
+        }
+
+        .blog__content-footer {
+            display: grid;
+            grid-template-columns: 2rem 1fr;
+            align-items: center;
+            gap: var(--spacing-xs);
+
+            .blog__user-img {
+                width: 100%;
+            }
+        }
+    }
+}
