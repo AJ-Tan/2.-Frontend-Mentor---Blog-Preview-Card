@@ -1,59 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Frontend Mentor | Blog preview card</title>
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    footer {position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);}
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <main>
-    <article class="blog__card">
-      <img src="./assets/images/illustration-article.svg" alt="" class="blog__img">
-      <div class="blog__content">
+    <title>Frontend Mentor | Blog preview card</title>
 
-        <!-- For scalability and additional tags -->
-        <section class="blog__content-header">
-          <ul class="blog__tag-list">
-            <li class="blog__tag-item">
-              <p class="blog__color-yellow">Learning</p>
-            </li>
-          </ul>
-          <p class="blog__date">Published 21 Dec 2023</p>
-        </section>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      footer {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="blog__card">
+        <img
+          src="./assets/images/illustration-article.svg"
+          alt=""
+          class="blog__img"
+        />
+        <div class="blog__content">
+          <section class="blog__content-header">
+            <ul class="blog__tag-list">
+              <!-- For scalability and additional tags -->
+              <li class="blog__tag-item">
+                <p class="blog__color-yellow">Learning</p>
+              </li>
+            </ul>
+            <p class="blog__date">Published 21 Dec 2023</p>
+          </section>
 
-        <section class="blog__content-main">
-          <h1 class="blog__title">HTML & CSS foundations</h1>
-          <p class="blog__description">These languages are the backbone of every website, definning structure, content and presentation.</p>
-        </section>
+          <section class="blog__content-main">
+            <h1 class="blog__title">HTML & CSS foundations</h1>
+            <p class="blog__description">
+              These languages are the backbone of every website, definning
+              structure, content and presentation.
+            </p>
+          </section>
 
-        <section class="blog__content-footer">
-          <img src="./assets/images/image-avatar.webp" alt="" class="blog__user-img">
-          <p class="blog__user-name">Greg Hooper</p>
-        </section>
+          <section class="blog__content-footer">
+            <img
+              src="./assets/images/image-avatar.webp"
+              alt=""
+              class="blog__user-img"
+            />
+            <p class="blog__user-name">Greg Hooper</p>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Aldomin Joseph R. Tan</a>.
       </div>
-    </article>
-  </main>
-  
-  <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Aldomin Joseph R. Tan</a>.
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
